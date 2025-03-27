@@ -1,0 +1,160 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: #1a1a1a;
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Main container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+  }
+
+  /* Main content */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px;
+    padding-bottom: 48px;
+    max-width: 340px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Content wrapper */
+  .content {
+    width: 100%;
+    margin-bottom: 24px;
+    /* animation: fadeIn 0.5s ease-out forwards; */
+  }
+
+  /* Heading and text */
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    /* animation: slideUp 0.5s ease-out forwards; */
+    /* animation-delay: 0.1s; */
+    /* opacity: 0; */
+  }
+
+  .text {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 24px;
+    /* animation: slideUp 0.5s ease-out forwards; */
+    /* animation-delay: 0.1s; */
+    /* opacity: 0; */
+  }
+
+  /* Buttons container */
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* animation: slideUp 0.5s ease-out forwards; */
+    /* animation-delay: 0.2s; */
+    /* opacity: 0; */
+  }
+
+  /* Button styles */
+  .btn {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    /* transition: all 0.3s; */
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  .btn-primary {
+    background-color: #7C3AED;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(124, 58, 237, 0.1);
+  }
+
+  .btn-primary:hover {
+    background-color: #6D28D9;
+    box-shadow: 0 10px 15px rgba(124, 58, 237, 0.2);
+  }
+
+  .btn-secondary {
+    background-color: #D8B4FE;
+    color: black;
+    border: none;
+  }
+
+  .btn-secondary:hover {
+    background-color: #C4A6E0;
+    box-shadow: 0 4px 6px rgba(216, 180, 254, 0.2);
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Media queries for larger screens */
+  @media (min-width: 640px) {
+    .main {
+      padding: 24px;
+      padding-bottom: 64px;
+      max-width: 448px;
+    }
+
+    .heading {
+      font-size: 1.875rem;
+    }
+
+    .text {
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 16px;
+      font-size: 1rem;
+    }
+  }

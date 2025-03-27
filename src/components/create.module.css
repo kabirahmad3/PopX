@@ -1,0 +1,141 @@
+ /* Reset and base styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Form container */
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  /* Heading styles */
+  .heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+  }
+
+  /* Form group */
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #7C3AED;
+    font-weight: 500;
+  }
+
+  .required:after {
+    content: '*';
+    color: #7C3AED;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: white;
+    color: #333;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: #7C3AED;
+  }
+
+  /* Radio group */
+  .radio-group {
+    margin: 16px 0;
+  }
+
+  .radio-group-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .radio-options {
+    display: flex;
+    gap: 24px;
+  }
+
+  .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .radio-input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .radio-input:checked {
+    border-color: #7C3AED;
+  }
+
+  .radio-input:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #7C3AED;
+    border-radius: 50%;
+  }
+
+  .radio-label {
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  /* Button styles */
+  .btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #7C3AED;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #6D28D9;
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }

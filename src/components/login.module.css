@@ -1,0 +1,112 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7f8;
+    color: #1a1a1a;
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Main container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 24px;
+    max-width: 100%;
+  }
+
+  /* Form content */
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Heading and text */
+  .heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  /* Form group */
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.875rem;
+    color: #7C3AED;
+    font-weight: 500;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px; /* Prevents zoom on iOS */
+    background-color: white;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: #7C3AED;
+  }
+
+  .form-input::placeholder {
+    color: #999;
+  }
+
+  /* Button styles */
+  .btn {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    margin-top: 8px;
+  }
+
+  .btn-login {
+    background-color: #bfbfbf;
+    color: white;
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding: 32px;
+    }
+
+    .heading {
+      font-size: 2rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+  }
