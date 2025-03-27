@@ -3,7 +3,8 @@ import { useNavigate } from "react-router";
 function Create() {
     const navigate = useNavigate();
 
-    const created=()=>{
+    const created=(event)=>{
+        event.preventDefault();
         alert("Account Created");
         navigate("/login");
     }
