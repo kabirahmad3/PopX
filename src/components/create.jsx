@@ -1,12 +1,22 @@
 import appstyle from "./create.module.css";
-import { useNavigate } from "react-router";
+import { createSearchParams, useNavigate } from "react-router";
 function Create() {
     const navigate = useNavigate();
 
     const created=(event)=>{
         event.preventDefault();
+
+        const {fullName, email, password} = event.target;
+        
         alert("Account Created");
-        navigate("/login");
+        navigate({
+          pathname: "/login",
+          search: createSearchParams({
+            name: fullName.value,
+            email: email.value,
+            password: password.value
+          }).toString()
+        });
     }
   return (
     <>
